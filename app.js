@@ -11,13 +11,21 @@ function Goat(name, imgSrc) {
 
 let cruisinGoat = new Goat("CruisinGoat", "./img/cruisin-goat.jpg");
 let floatGoat = new Goat("FloatYourGoat", "./img/float-your-goat");
-let goatAway = new Goat("GoatAway", "./img/goat-away");
-let goatLogo = new Goat("GoatLogo", "./img/goat-logo");
-let goatHand = new Goat("GoatOutofHand", "./img/goat-out-of-hand");
 
+let goatArray = [];
 goatArray.push(cruisinGoat);
 goatArray.push(floatGoat);
-goatArray.push(goatAway);
-goatArray.push(goatLogo);
-goatArray.push(goatHand);
 
+
+console.log(goatArray);
+
+function setGoatImages(goat1, gotat2){
+goat1Img.src = goat1.imgSrc;
+got1Img.alt = goat1.name;
+goat1Img.title = goat1.name;
+goat2Img.src = goat2.imgSrc;
+goat2Img.alt = goat2.name;
+goat2Img.title = goat2.name;
+}
+
+setGoatImages(goatArray[0], goatArray[2]);
